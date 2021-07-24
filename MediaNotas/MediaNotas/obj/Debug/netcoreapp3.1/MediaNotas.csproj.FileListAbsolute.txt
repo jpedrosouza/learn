@@ -1,0 +1,13 @@
+D:\source\MediaNotas\MediaNotas\MediaNotas\bin\Debug\netcoreapp3.1\MediaNotas.exe
+D:\source\MediaNotas\MediaNotas\MediaNotas\bin\Debug\netcoreapp3.1\MediaNotas.deps.json
+D:\source\MediaNotas\MediaNotas\MediaNotas\bin\Debug\netcoreapp3.1\MediaNotas.runtimeconfig.json
+D:\source\MediaNotas\MediaNotas\MediaNotas\bin\Debug\netcoreapp3.1\MediaNotas.runtimeconfig.dev.json
+D:\source\MediaNotas\MediaNotas\MediaNotas\bin\Debug\netcoreapp3.1\MediaNotas.dll
+D:\source\MediaNotas\MediaNotas\MediaNotas\bin\Debug\netcoreapp3.1\MediaNotas.pdb
+D:\source\MediaNotas\MediaNotas\MediaNotas\obj\Debug\netcoreapp3.1\MediaNotas.csproj.AssemblyReference.cache
+D:\source\MediaNotas\MediaNotas\MediaNotas\obj\Debug\netcoreapp3.1\MediaNotas.AssemblyInfoInputs.cache
+D:\source\MediaNotas\MediaNotas\MediaNotas\obj\Debug\netcoreapp3.1\MediaNotas.AssemblyInfo.cs
+D:\source\MediaNotas\MediaNotas\MediaNotas\obj\Debug\netcoreapp3.1\MediaNotas.csproj.CoreCompileInputs.cache
+D:\source\MediaNotas\MediaNotas\MediaNotas\obj\Debug\netcoreapp3.1\MediaNotas.dll
+D:\source\MediaNotas\MediaNotas\MediaNotas\obj\Debug\netcoreapp3.1\MediaNotas.pdb
+D:\source\MediaNotas\MediaNotas\MediaNotas\obj\Debug\netcoreapp3.1\MediaNotas.genruntimeconfig.cache
