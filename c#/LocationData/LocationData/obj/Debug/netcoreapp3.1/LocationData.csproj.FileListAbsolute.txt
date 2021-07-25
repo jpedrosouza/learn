@@ -1,0 +1,13 @@
+D:\source\LocationData\LocationData\bin\Debug\netcoreapp3.1\LocationData.exe
+D:\source\LocationData\LocationData\bin\Debug\netcoreapp3.1\LocationData.deps.json
+D:\source\LocationData\LocationData\bin\Debug\netcoreapp3.1\LocationData.runtimeconfig.json
+D:\source\LocationData\LocationData\bin\Debug\netcoreapp3.1\LocationData.runtimeconfig.dev.json
+D:\source\LocationData\LocationData\bin\Debug\netcoreapp3.1\LocationData.dll
+D:\source\LocationData\LocationData\bin\Debug\netcoreapp3.1\LocationData.pdb
+D:\source\LocationData\LocationData\obj\Debug\netcoreapp3.1\LocationData.csproj.AssemblyReference.cache
+D:\source\LocationData\LocationData\obj\Debug\netcoreapp3.1\LocationData.AssemblyInfoInputs.cache
+D:\source\LocationData\LocationData\obj\Debug\netcoreapp3.1\LocationData.AssemblyInfo.cs
+D:\source\LocationData\LocationData\obj\Debug\netcoreapp3.1\LocationData.csproj.CoreCompileInputs.cache
+D:\source\LocationData\LocationData\obj\Debug\netcoreapp3.1\LocationData.dll
+D:\source\LocationData\LocationData\obj\Debug\netcoreapp3.1\LocationData.pdb
+D:\source\LocationData\LocationData\obj\Debug\netcoreapp3.1\LocationData.genruntimeconfig.cache
