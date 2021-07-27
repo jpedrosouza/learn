@@ -16,7 +16,8 @@
                HorizontalContentAlignment="Center"
                Margin="0, 20"></Label>
 
-        <TextBox x:Name="productSearch" Text="Digite o nome de um produto...."
+        <TextBox x:Name="productSearch"
+                 Text="Digite o nome de um produto...."
                  Width="500"
                  Height="28"
                  BorderBrush="LightGray"
@@ -29,23 +30,25 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     Margin="0, 50">
-            <Button x:Name="registerButton" Margin="0, 0, 10, 10"
+            <Button x:Name="registerButton"
+                    Margin="0, 0, 10, 10"
                     Content="Cadastrar um produto"
-                    Click="CloseApplication"
                     Padding="10"></Button>
-            <Button x:Name="updateButton" Margin="0, 0, 10, 10"
+            <Button x:Name="updateButton"
+                    Margin="0, 0, 10, 10"
                     Content="Editar um produto"
                     Padding="10"></Button>
-            <Button x:Name="deleteButton" Margin="0, 0, 10, 10"
+            <Button x:Name="deleteButton"
+                    Margin="0, 0, 10, 10"
                     Content="Excluir um produto"
                     Padding="10"></Button>
         </StackPanel>
-        <Path Data="M949.39024,63.06439"
-              Fill="#FFF4F4F5"
-              Height="100"
-              Stretch="Fill"
-              Stroke="Black"
-              Width="1" />
+        <Button Width="100"
+                Height="30"
+                Margin="0, 50"
+                Click="CloseApplication"
+                Content="Sair"
+                VerticalAlignment="Bottom"></Button>
     </StackPanel>
 
 </Window>

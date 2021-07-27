@@ -1,20 +1,20 @@
 ﻿ProductsControl
-1.0.0.0
+
 
 winexe
 C#
 .cs
-D:\source\learn\c#\ProductsControl\ProductsControl\obj\Debug\netcoreapp3.1\
+D:\source\learn\c#\ProductsControl\ProductsControl\obj\Release\netcoreapp3.1\
 ProductsControl
 none
 false
-TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
+TRACE;RELEASE;NETCOREAPP;NETCOREAPP3_1;
 D:\source\learn\c#\ProductsControl\ProductsControl\App.xaml
 11407045341
 
-5-1741052367
+3-1233169557
 192-1533232326
 MainWindow.xaml;
 
-False
+True
 

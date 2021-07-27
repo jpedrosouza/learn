@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZDi8cTYr+C6dw6kCJe26lmcFxg4LE/YASz9e9TmjRvlIUYs5lW+/ZrelnlSoKwpQiX3CnAXzQkrsoBmVs10b0w==",
+  "dgSpecHash": "ZwEWY+gaVNdJyXjEUZemJraHH1S3gzFyfxPkMDCICWnWf7d4xgYb51tL3BucnIITpS47m27WipgUFo7yABCg/g==",
   "success": true,
-  "projectFilePath": "D:\\source\\ProductsControl\\ProductsControl\\ProductsControl.csproj",
+  "projectFilePath": "D:\\source\\learn\\c#\\ProductsControl\\ProductsControl\\ProductsControl.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

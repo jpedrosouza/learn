@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\source\\ProductsControl\\ProductsControl\\ProductsControl.csproj": {}
+    "D:\\source\\learn\\c#\\ProductsControl\\ProductsControl\\ProductsControl.csproj": {}
   },
   "projects": {
-    "D:\\source\\ProductsControl\\ProductsControl\\ProductsControl.csproj": {
+    "D:\\source\\learn\\c#\\ProductsControl\\ProductsControl\\ProductsControl.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\source\\ProductsControl\\ProductsControl\\ProductsControl.csproj",
+        "projectUniqueName": "D:\\source\\learn\\c#\\ProductsControl\\ProductsControl\\ProductsControl.csproj",
         "projectName": "ProductsControl",
-        "projectPath": "D:\\source\\ProductsControl\\ProductsControl\\ProductsControl.csproj",
+        "projectPath": "D:\\source\\learn\\c#\\ProductsControl\\ProductsControl\\ProductsControl.csproj",
         "packagesPath": "C:\\Users\\jsouz\\.nuget\\packages\\",
-        "outputPath": "D:\\source\\ProductsControl\\ProductsControl\\obj\\",
+        "outputPath": "D:\\source\\learn\\c#\\ProductsControl\\ProductsControl\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
