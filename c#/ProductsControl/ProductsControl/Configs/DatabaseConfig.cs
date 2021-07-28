@@ -5,12 +5,9 @@ using ProductsControl.Models;
 
 namespace ProductsControl.Configs
 {
-    class DatabaseConfig
+    public class DatabaseConfig
     {
         private static SQLiteConnection sQLiteConnection;
-
-        public DatabaseConfig()
-        { }
 
         private static SQLiteConnection DbConnection()
         {

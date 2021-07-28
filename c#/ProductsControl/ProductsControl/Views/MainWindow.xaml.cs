@@ -22,7 +22,6 @@ namespace ProductsControl.Views
     {
 
         TextBox textBoxSearchProduct;
-        AddProductWindow addProductWindow = new AddProductWindow();
 
         public MainWindow()
         {
