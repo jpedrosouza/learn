@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProductsControl.Configs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,14 +25,34 @@ namespace ProductsControl.Views
         public MainWindow()
         {
             InitializeComponent();
+            BackToHome();
         }
+
+        private void InitDatabase()
+        {
+            DatabaseConfig.CreateDatabase();
+            DatabaseConfig.CreateProductsTable();
+        }
+
+        /// <summary>
+        /// Set HomePage in Window.
+        /// </summary>
 
         public void BackToHome()
         {
-            this.Show();
+            this.Content = new HomePage(this);
         }
 
-        private void CloseApplication(object sender, RoutedEventArgs e)
+        public void NavigateToAddProductPage()
+        {
+            this.Content = new AddProductPage(this);
+        }
+
+        /// <summary>
+        /// Close Application.
+        /// </summary>
+
+        public void CloseApplication()
         {
             this.Close();
         }

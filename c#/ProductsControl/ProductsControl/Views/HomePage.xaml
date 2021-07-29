@@ -47,7 +47,7 @@
                     Height="30"
                     Margin="0, 50"
                     Click="CloseApplication"
-                    Content="Sair"
+                    Content="Fechar"
                     VerticalAlignment="Bottom"></Button>
         </StackPanel>
     </Page.Content>

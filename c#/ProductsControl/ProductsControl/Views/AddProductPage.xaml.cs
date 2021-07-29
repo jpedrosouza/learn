@@ -20,14 +20,14 @@ namespace ProductsControl.Views
     public partial class AddProductPage : Page
     {
 
+        MainWindow mainWindow;
         TextBox _productName, _productInventory, _productPrice;
 
-        public AddProductPage()
+        public AddProductPage(MainWindow mainWindow)
         {
             InitializeComponent();
 
-            DatabaseConfig.CreateDatabase();
-            DatabaseConfig.CreateProductsTable();
+            this.mainWindow = mainWindow;
 
             _productName = this.FindName("productName") as TextBox;
             _productInventory = this.FindName("productInventory") as TextBox;
@@ -37,7 +37,6 @@ namespace ProductsControl.Views
 
         private void BackToHome(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
             mainWindow.BackToHome();
         }
 

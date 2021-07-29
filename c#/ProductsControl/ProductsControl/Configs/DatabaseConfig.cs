@@ -22,9 +22,9 @@ namespace ProductsControl.Configs
             {
                 SQLiteConnection.CreateFile(@"D:/source/learn/c#/ProductsControl/ProductsControl/Database/database.sqlite");
             }
-            catch
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
