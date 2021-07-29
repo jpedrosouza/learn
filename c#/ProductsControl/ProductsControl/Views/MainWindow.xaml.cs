@@ -28,12 +28,6 @@ namespace ProductsControl.Views
             BackToHome();
         }
 
-        private void InitDatabase()
-        {
-            DatabaseConfig.CreateDatabase();
-            DatabaseConfig.CreateProductsTable();
-        }
-
         /// <summary>
         /// Set HomePage in Window.
         /// </summary>
