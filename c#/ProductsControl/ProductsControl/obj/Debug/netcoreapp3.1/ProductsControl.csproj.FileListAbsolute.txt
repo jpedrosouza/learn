@@ -53,3 +53,11 @@ D:\source\learn\c#\ProductsControl\ProductsControl\obj\Debug\netcoreapp3.1\Views
 D:\source\learn\c#\ProductsControl\ProductsControl\obj\Debug\netcoreapp3.1\ProductsControl.csproj.CopyComplete
 D:\source\learn\c#\ProductsControl\ProductsControl\obj\Debug\netcoreapp3.1\Views\AddProductWindow.baml
 D:\source\learn\c#\ProductsControl\ProductsControl\obj\Debug\netcoreapp3.1\Views\AddProductWindow.g.cs
+D:\source\learn\c#\ProductsControl\ProductsControl\obj\Debug\netcoreapp3.1\Views\ListProductsWindow.baml
+D:\source\learn\c#\ProductsControl\ProductsControl\obj\Debug\netcoreapp3.1\Views\ListProductsWindow.g.cs
+D:\source\learn\c#\ProductsControl\ProductsControl\obj\Debug\netcoreapp3.1\Views\AddProductPage.baml
+D:\source\learn\c#\ProductsControl\ProductsControl\obj\Debug\netcoreapp3.1\Views\HomePage.baml
+D:\source\learn\c#\ProductsControl\ProductsControl\obj\Debug\netcoreapp3.1\Views\ListProductsPage.baml
+D:\source\learn\c#\ProductsControl\ProductsControl\obj\Debug\netcoreapp3.1\Views\AddProductPage.g.cs
+D:\source\learn\c#\ProductsControl\ProductsControl\obj\Debug\netcoreapp3.1\Views\HomePage.g.cs
+D:\source\learn\c#\ProductsControl\ProductsControl\obj\Debug\netcoreapp3.1\Views\ListProductsPage.g.cs

@@ -17,24 +17,28 @@ using ProductsControl.Models;
 
 namespace ProductsControl.Views
 {
-    public partial class AddProductWindow : Page
+    public partial class AddProductPage : Page
     {
 
-        TextBox productName, productInventory, productPrice;
+        TextBox _productName, _productInventory, _productPrice;
 
-        public AddProductWindow()
+        public AddProductPage()
         {
             InitializeComponent();
 
-            productName = this.FindName("productName") as TextBox;
-            productInventory = this.FindName("productInventory") as TextBox;
-            productPrice = this.FindName("productPrice") as TextBox;
+            DatabaseConfig.CreateDatabase();
+            DatabaseConfig.CreateProductsTable();
+
+            _productName = this.FindName("productName") as TextBox;
+            _productInventory = this.FindName("productInventory") as TextBox;
+            _productPrice = this.FindName("productPrice") as TextBox;
+
         }
 
         private void BackToHome(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = new MainWindow();
-            this.Content = mainWindow;
+            mainWindow.BackToHome();
         }
 
         /// <summary>
@@ -45,9 +49,9 @@ namespace ProductsControl.Views
         {
             Product product = new Product();
 
-            product.name = productName.Text;
-            productInventory = int.Parse(productInventory.Text);
-            productPrice = double.Parse(productPrice.Text);
+            product.name = _productName.Text;
+            product.inventory = int.Parse(_productInventory.Text);
+            product.price = double.Parse(_productPrice.Text);
 
             DatabaseConfig.AddProduct(product);
         }

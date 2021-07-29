@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,28 +13,31 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ProductsControl.Configs;
+using ProductsControl.Models;
 
 namespace ProductsControl.Views
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    public partial class ListProductsPage : Page
     {
+        ListView _productsListView;
 
-        public MainWindow()
+        public ListProductsPage()
         {
             InitializeComponent();
+
+            _productsListView = this.FindName("productsList") as ListView;
         }
 
-        public void BackToHome()
+        public void GetProducts()
         {
-            this.Show();
-        }
+            DataTable data = DatabaseConfig.GetProducts();
 
-        private void CloseApplication(object sender, RoutedEventArgs e)
-        {
-            this.Close();
+            foreach (DataRowCollection product in data.Rows)
+            {
+          
+
+            }
         }
     }
 }

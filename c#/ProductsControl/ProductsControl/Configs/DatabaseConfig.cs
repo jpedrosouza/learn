@@ -11,7 +11,7 @@ namespace ProductsControl.Configs
 
         private static SQLiteConnection DbConnection()
         {
-            sQLiteConnection = new SQLiteConnection("Data Source=D:/source/learn/c#/ProductsControl/ProductsControl/Database/Database.sqlite; Version=3");
+            sQLiteConnection = new SQLiteConnection("Data Source=D:/source/learn/c#/ProductsControl/ProductsControl/Database/database.sqlite; Version=3");
             sQLiteConnection.Open();
             return sQLiteConnection;
         }
@@ -20,7 +20,7 @@ namespace ProductsControl.Configs
         {
             try
             {
-                SQLiteConnection.CreateFile(@"D:/source/learn/c#/ProductsControl/ProductsControl/Database/Database.sqlite");
+                SQLiteConnection.CreateFile(@"D:/source/learn/c#/ProductsControl/ProductsControl/Database/database.sqlite");
             }
             catch
             {
@@ -34,7 +34,7 @@ namespace ProductsControl.Configs
             {
                 using (var cmd = DbConnection().CreateCommand())
                 {
-                    cmd.CommandText = "CREATE TABLE IF NOT EXISTS products(id int PRIMARY KEY AUTOINCREMENT NOT NULL, name varchar(200), inventory int(10), price decimal)";
+                    cmd.CommandText = "CREATE TABLE IF NOT EXISTS products(id INTEGER PRIMARY KEY, name varchar(200), inventory int(10), price decimal)";
                     cmd.ExecuteNonQuery();
                 }
             }
@@ -92,11 +92,10 @@ namespace ProductsControl.Configs
             {
                 using (var cmd = DbConnection().CreateCommand())
                 {
-                    cmd.CommandText = "INSERT INTO products(id, name, inventory, price) values (@id, @name, @inventory, @price)";
-                    cmd.Parameters.AddWithValue("@id", product.id);
-                    cmd.Parameters.AddWithValue("@name", product.name);
-                    cmd.Parameters.AddWithValue("@inventory", product.inventory);
-                    cmd.Parameters.AddWithValue("@price", product.price);
+                    cmd.CommandText = "INSERT INTO products(name, inventory, price) values (@name, @inventory, @price)";
+                    cmd.Parameters.AddWithValue("@Name", product.name);
+                    cmd.Parameters.AddWithValue("@Inventory", product.inventory);
+                    cmd.Parameters.AddWithValue("@Price", product.price);
                     cmd.ExecuteNonQuery();
                 }
             }
