@@ -32,11 +32,9 @@ namespace ProductsControl.Configs
         {
             try
             {
-                using (var cmd = DbConnection().CreateCommand())
-                {
-                    cmd.CommandText = "CREATE TABLE IF NOT EXISTS products(id INTEGER PRIMARY KEY, name varchar(200), inventory int(10), price decimal)";
-                    cmd.ExecuteNonQuery();
-                }
+                using SQLiteCommand cmd = DbConnection().CreateCommand();
+                cmd.CommandText = "CREATE TABLE IF NOT EXISTS products(id INTEGER PRIMARY KEY, name varchar(200), inventory int(10), price decimal)";
+                cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
@@ -46,18 +44,15 @@ namespace ProductsControl.Configs
 
         public static DataTable GetProducts()
         {
-            SQLiteDataAdapter dataAdapter = null;
             DataTable dataTable = new DataTable();
 
             try
             {
-                using (var cmd = DbConnection().CreateCommand())
-                {
-                    cmd.CommandText = "SELECT * FROM products";
-                    dataAdapter = new SQLiteDataAdapter(cmd.CommandText, DbConnection());
-                    dataAdapter.Fill(dataTable);
-                    return dataTable;
-                }
+                using SQLiteCommand cmd = DbConnection().CreateCommand();
+                cmd.CommandText = "SELECT * FROM products";
+                SQLiteDataAdapter dataAdapter = new SQLiteDataAdapter(cmd.CommandText, DbConnection());
+                dataAdapter.Fill(dataTable);
+                return dataTable;
             }
             catch (Exception ex)
             {
@@ -67,18 +62,15 @@ namespace ProductsControl.Configs
 
         public static DataTable GetProduct(int productId)
         {
-            SQLiteDataAdapter dataAdapter = null;
             DataTable dataTable = new DataTable();
 
             try
             {
-                using (var cmd = DbConnection().CreateCommand())
-                {
-                    cmd.CommandText = "SELECT * FROM product WHERE id =" + productId;
-                    dataAdapter = new SQLiteDataAdapter(cmd.CommandText, DbConnection());
-                    dataAdapter.Fill(dataTable);
-                    return dataTable;
-                }
+                using var cmd = DbConnection().CreateCommand();
+                cmd.CommandText = "SELECT * FROM product WHERE id =" + productId;
+                SQLiteDataAdapter dataAdapter = new SQLiteDataAdapter(cmd.CommandText, DbConnection());
+                dataAdapter.Fill(dataTable);
+                return dataTable;
             }
             catch (Exception ex)
             {
@@ -90,14 +82,12 @@ namespace ProductsControl.Configs
         {
             try
             {
-                using (var cmd = DbConnection().CreateCommand())
-                {
-                    cmd.CommandText = "INSERT INTO products(name, inventory, price) values (@name, @inventory, @price)";
-                    cmd.Parameters.AddWithValue("@Name", product.name);
-                    cmd.Parameters.AddWithValue("@Inventory", product.inventory);
-                    cmd.Parameters.AddWithValue("@Price", product.price);
-                    cmd.ExecuteNonQuery();
-                }
+                using var cmd = DbConnection().CreateCommand();
+                cmd.CommandText = "INSERT INTO products(name, inventory, price) values (@name, @inventory, @price)";
+                cmd.Parameters.AddWithValue("@Name", product.name);
+                cmd.Parameters.AddWithValue("@Inventory", product.inventory);
+                cmd.Parameters.AddWithValue("@Price", product.price);
+                cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
@@ -109,15 +99,13 @@ namespace ProductsControl.Configs
         {
             try
             {
-                using (var cmd = DbConnection().CreateCommand())
-                {
-                    cmd.CommandText = "UPDATE products SET name=@name, inventory=@inventoy, price=@price WHERE id=@id";
-                    cmd.Parameters.AddWithValue("@id", product.id);
-                    cmd.Parameters.AddWithValue("@name", product.name);
-                    cmd.Parameters.AddWithValue("@inventory", product.inventory);
-                    cmd.Parameters.AddWithValue("@price", product.price);
-                    cmd.ExecuteNonQuery();
-                }
+                using var cmd = DbConnection().CreateCommand();
+                cmd.CommandText = "UPDATE products SET name=@name, inventory=@inventoy, price=@price WHERE id=@id";
+                cmd.Parameters.AddWithValue("@id", product.id);
+                cmd.Parameters.AddWithValue("@name", product.name);
+                cmd.Parameters.AddWithValue("@inventory", product.inventory);
+                cmd.Parameters.AddWithValue("@price", product.price);
+                cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
@@ -129,13 +117,10 @@ namespace ProductsControl.Configs
         {
             try
             {
-                using (var cmd = new SQLiteCommand(DbConnection()))
-                {
-                    cmd.CommandText = "DELETE FROM products WHERE id=@id";
-                    cmd.Parameters.AddWithValue("@id", productId);
-                    cmd.ExecuteNonQuery();
-
-                }
+                using var cmd = new SQLiteCommand(DbConnection());
+                cmd.CommandText = "DELETE FROM products WHERE id=@id";
+                cmd.Parameters.AddWithValue("@id", productId);
+                cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
