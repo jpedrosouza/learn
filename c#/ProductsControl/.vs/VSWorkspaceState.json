@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ProductsControl"
+    "\\ProductsControl",
+    "\\ProductsControl\\Views"
   ],
-  "SelectedNode": "\\ProductsControl\\MainWindow.xaml.cs",
+  "SelectedNode": "\\ProductsControl\\Views\\AddProductPage.xaml",
   "PreviewInSolutionExplorer": false
 }

@@ -1,5 +1,4 @@
-﻿using ProductsControl.Configs;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 
 namespace ProductsControl.Views

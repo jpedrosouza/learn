@@ -10,11 +10,11 @@ none
 false
 TRACE;RELEASE;NETCOREAPP;NETCOREAPP3_1;
 D:\source\learn\c#\ProductsControl\ProductsControl\App.xaml
-11407045341
+41713351722
 
-3-1233169557
-192-1533232326
-MainWindow.xaml;
+8-177669902
+197653746975
+Views\AddProductPage.xaml;Views\HomePage.xaml;Views\ListProductsPage.xaml;Views\MainWindow.xaml;
 
 True
 

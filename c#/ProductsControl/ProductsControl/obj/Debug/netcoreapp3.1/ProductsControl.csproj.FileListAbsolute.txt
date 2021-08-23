@@ -56,3 +56,5 @@ D:\source\learn\c#\ProductsControl\ProductsControl\obj\Debug\netcoreapp3.1\Produ
 D:\source\learn\c#\ProductsControl\ProductsControl\obj\Debug\netcoreapp3.1\ProductsControl.dll
 D:\source\learn\c#\ProductsControl\ProductsControl\obj\Debug\netcoreapp3.1\ProductsControl.pdb
 D:\source\learn\c#\ProductsControl\ProductsControl\obj\Debug\netcoreapp3.1\ProductsControl.genruntimeconfig.cache
+D:\source\learn\c#\ProductsControl\ProductsControl\obj\Debug\netcoreapp3.1\ProductsControl.csproj.AssemblyReference.cache
+D:\source\learn\c#\ProductsControl\ProductsControl\obj\Debug\netcoreapp3.1\ProductsControl.GeneratedMSBuildEditorConfig.editorconfig
